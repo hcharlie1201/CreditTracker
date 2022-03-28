@@ -1,0 +1,408 @@
+Started GET "/users/new" for 127.0.0.1 at 2022-03-28 11:33:22 -0400
+Processing by UsersController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.3ms | Allocations: 4252)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4982)
+  Rendered layout layouts/application.html.erb (Duration: 94.0ms | Allocations: 94541)
+Completed 200 OK in 200ms (Views: 96.2ms | ActiveRecord: 11.6ms | Allocations: 148918)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&password=[FILTERED]&email=%22casdads@gmail.com%22" for 127.0.0.1 at 2022-03-28 11:34:47 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "password"=>"[FILTERED]", "email"=>"\"casdads@gmail.com\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 269)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&password=[FILTERED]&email=%22casdads@gmail.com%22" for 127.0.0.1 at 2022-03-28 11:36:45 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "password"=>"[FILTERED]", "email"=>"\"casdads@gmail.com\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 172)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&password=[FILTERED]&email=%22casdads@gmail.com%22" for 127.0.0.1 at 2022-03-28 11:36:46 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "password"=>"[FILTERED]", "email"=>"\"casdads@gmail.com\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 172)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&password=[FILTERED]&email=%22casdads@gmail.com%22" for 127.0.0.1 at 2022-03-28 11:36:47 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "password"=>"[FILTERED]", "email"=>"\"casdads@gmail.com\""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 172)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&email=%22casdads@gmail.com%22&password=[FILTERED]&dob=2018-12-19%2009:26:03.478039" for 127.0.0.1 at 2022-03-28 11:38:57 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "email"=>"\"casdads@gmail.com\"", "password"=>"[FILTERED]", "dob"=>"2018-12-19 09:26:03.478039"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 173)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&email=%22casdads@gmail.com%22&password=[FILTERED]&dob=2018-12-19%2009:26:03.478039" for 127.0.0.1 at 2022-03-28 11:38:58 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "email"=>"\"casdads@gmail.com\"", "password"=>"[FILTERED]", "dob"=>"2018-12-19 09:26:03.478039"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 173)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&email=%22casdads@gmail.com%22&password=[FILTERED]&dob=2018-12-19%2009:26:03.478039" for 127.0.0.1 at 2022-03-28 11:41:23 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "email"=>"\"casdads@gmail.com\"", "password"=>"[FILTERED]", "dob"=>"2018-12-19 09:26:03.478039"}
+Completed 400 Bad Request in 15ms (Allocations: 39168)
+Started POST "/users?firstname=%22Charlie%22&lastname=%22Charlie%22&email=%22casdads@gmail.com%22&password=[FILTERED]&dob=2018-12-19%2009:26:03.478039" for 127.0.0.1 at 2022-03-28 11:41:39 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"\"Charlie\"", "lastname"=>"\"Charlie\"", "email"=>"\"casdads@gmail.com\"", "password"=>"[FILTERED]", "dob"=>"2018-12-19 09:26:03.478039"}
+Completed 400 Bad Request in 2ms (Allocations: 214)
+Started POST "/users?firstname=Charlie&lastname=Charlie&email=casdads@gmail.com&password=[FILTERED]&dob=2018-12-19%2009:26:03.478039" for 127.0.0.1 at 2022-03-28 11:41:57 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"Charlie", "lastname"=>"Charlie", "email"=>"casdads@gmail.com", "password"=>"[FILTERED]", "dob"=>"2018-12-19 09:26:03.478039"}
+Completed 400 Bad Request in 1ms (Allocations: 174)
+Started POST "/users?firstname=Charlie&lastname=Charlie&email=casdads@gmail.com&password=[FILTERED]&dob=2018-12-19%2009:26:03.478039" for 127.0.0.1 at 2022-03-28 11:43:16 -0400
+Processing by UsersController#create as */*
+  Parameters: {"firstname"=>"Charlie", "lastname"=>"Charlie", "email"=>"casdads@gmail.com", "password"=>"[FILTERED]", "dob"=>"2018-12-19 09:26:03.478039"}
+Completed 400 Bad Request in 1ms (Allocations: 174)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:45:57 -0400
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (Allocations: 157)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:46:12 -0400
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (Allocations: 157)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:47:09 -0400
+Processing by UsersController#create as */*
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 35.3ms | Allocations: 51234)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:48:30 -0400
+Processing by UsersController#create as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 175)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:48:41 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    user: {
+        firstname: "Charlie",
+        lastname: "Wu",
+        email: "charlie@gmail.com",
+        dob: "2012-04-23T18:25:43.511Z"
+        password: "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 154)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:49:01 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    user: {
+        firstname: "Charlie",
+        lastname: "Wu",
+        email: "charlie@gmail.com",
+        dob: "2012-04-23T18:25:43.511Z"
+        password: "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 146)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:49:11 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    user: {
+        firstname: "Charlie",
+        lastname: "Wu",
+        email: "charlie@gmail.com",
+        dob: "2012-04-23T18:25:43.511Z"
+        password: "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 2ms (Allocations: 2983)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:49:53 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    user: {
+        firstname: "Charlie",
+        lastname: "Wu",
+        email: "charlie@gmail.com",
+        dob: "2012-04-23T18:25:43.511Z"
+        password: "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 3541)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:50:19 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    user: {
+        firstname: "Charlie",
+        lastname: "Wu",
+        email: "charlie@gmail.com",
+        dob: "2012-04-23T18:25:43.511Z"
+        password: "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 15ms (Allocations: 3548)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:50:56 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z"
+        "password": "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 158)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:52:19 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z"
+        "password": "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 3547)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:52:33 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z"
+        "password": "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 158)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:52:33 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z"
+        "password": "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 141)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:53:15 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z"
+        "password": "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 2ms (Allocations: 2984)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:54:01 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "users": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z"
+        "password": "asdasd"
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (Allocations: 154)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:54:17 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000109ecd150>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000109ecd150>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 91ms (ActiveRecord: 21.0ms | Allocations: 15201)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 11:54:22 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010aafd970>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010aafd970>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 686)
+Started GET "/index" for 127.0.0.1 at 2022-03-28 11:58:09 -0400
+Started GET "/users" for 127.0.0.1 at 2022-03-28 11:58:21 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2033)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 35339)
+Completed 200 OK in 102ms (Views: 86.8ms | ActiveRecord: 2.4ms | Allocations: 40256)
+Started GET "/users" for 127.0.0.1 at 2022-03-28 11:58:42 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 408)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1682)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 1992)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:33:35 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000109835ef0>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000109835ef0>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 25.8ms | Allocations: 19309)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:34:05 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010c24edb8>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010c24edb8>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 60ms (ActiveRecord: 18.5ms | Allocations: 16847)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:34:43 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 28ms (Allocations: 5555)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:35:06 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010737ad68>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010737ad68>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 55ms (ActiveRecord: 17.6ms | Allocations: 16836)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:35:26 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00000001077094e8>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00000001077094e8>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 686)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:35:29 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010776b698>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010776b698>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 0.0ms | Allocations: 593)
+Started GET "/users" for 127.0.0.1 at 2022-03-28 12:47:55 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 435)
+  Rendered users/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 10763)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 43687)
+Completed 200 OK in 81ms (Views: 69.3ms | ActiveRecord: 28.0ms | Allocations: 51754)
+Started GET "/users" for 127.0.0.1 at 2022-03-28 12:50:20 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 34941)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 15.0ms | Allocations: 43017)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:50:28 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010a349f08>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010a349f08>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 67ms (ActiveRecord: 2.5ms | Allocations: 9236)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:51:03 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010f5c4800>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010f5c4800>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+Completed 422 Unprocessable Entity in 75ms (ActiveRecord: 15.8ms | Allocations: 18248)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:51:17 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00000001183bede0>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00000001183bede0>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms | Allocations: 1333)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:51:42 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000011854d288>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000011854d288>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.0ms | Allocations: 1315)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:51:57 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z",
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 159)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:52:37 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000011859c158>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000011859c158>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+Completed 422 Unprocessable Entity in 9ms (ActiveRecord: 0.0ms | Allocations: 1301)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:52:41 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "user": {
+        "firstname": "Charlie",
+        "lastname": "Wu",
+        "email": "charlie@gmail.com",
+        "dob": "2012-04-23T18:25:43.511Z",
+        "password": "basdfasdfasdf",
+    }
+}
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 150)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:52:47 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000118657b60>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000118657b60>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+Completed 422 Unprocessable Entity in 8ms (ActiveRecord: 0.0ms | Allocations: 1301)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:53:23 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (4.4ms)[0m  [1m[32mINSERT INTO "users" ("firstname", "lastname", "email", "dob", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["firstname", "Charlie"], ["lastname", "Wu"], ["email", "charlie@gmail.com"], ["dob", "2012-04-23 18:25:43.511000"], ["created_at", "2022-03-28 16:53:23.419087"], ["updated_at", "2022-03-28 16:53:23.419087"], ["password_digest", "[FILTERED]"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 109ms (ActiveRecord: 29.8ms | Allocations: 17977)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:54:08 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 15.8ms | Allocations: 23202)
+Started POST "/users" for 127.0.0.1 at 2022-03-28 12:56:01 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010ad34e28>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+[31mUnpermitted parameter: :password. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000000010ad34e28>, params: {"user"=>{"firstname"=>"Charlie", "lastname"=>"Wu", "email"=>"charlie@gmail.com", "dob"=>"2012-04-23T18:25:43.511Z", "password"=>"[FILTERED]"}, "controller"=>"users", "action"=>"create"} }[0m
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 90ms (ActiveRecord: 20.3ms | Allocations: 16834)
